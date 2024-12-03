@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript to add class name</title>
+    <style>
+        .addCSS {
+            color: green;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body style="text-align:center;">
+    <h1 style="color:green;">
+       Welcome to javaScript.
+    </h1>
+
+    <p id="p">
+        A Computer Science portal.
+    </p>
+
+    <button onclick="addClass()"> 
+        AddClass 
+    </button>
+
+    
+    <script>
+        function addClass() {
+            let v = document.getElementById("p");
+            v.className += "addCSS";
+        }
+    </script>
+</body>
+</html>

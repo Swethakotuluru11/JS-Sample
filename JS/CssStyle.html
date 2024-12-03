@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<h1 id="test" style="color:green"> 
+	Welcome to JavaScript
+</h1> 
+<button onclick="myFunction()"> 
+	Try it 
+</button> 
+<p> 
+	The computed font-family of text 
+	in the test div is: 
+	<span id="demo"></span> 
+</p> 
+
+<script> 
+	function myFunction() { 
+	
+		var elem = document.getElementById("test"); 
+		var theCSSprop = 
+			window.getComputedStyle(elem, innerWidth); 
+		document.getElementById("demo").innerHTML = 
+						theCSSprop; 
+	} 
+</script>
+</body>
+</html>
